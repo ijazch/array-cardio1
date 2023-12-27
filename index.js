@@ -75,7 +75,7 @@ console.log(fullNames);
 // Array.prototype.sort()
 // 3. Sort the inventors by birthdate, oldest to youngest
 const ordered = inventors.sort(function (a, b) {
-  if (a.year > b.yaear) {
+  if (a.year > b.year) {
     return 1;
   } else {
     return -1;
@@ -98,7 +98,10 @@ const oldest = inventors.sort(function (a, b) {
 console.log(oldest);
 
 // 6. create a list of Boulevards in Paris that contain 'de' anywhere in the name
-const de = inventors.sort(function (d, d) {});
+const category = document.querySelector(".pc-category");
+const link = Array.from(document.querySelectorforAll("a"));
+
+const de = link.map((link) => link.textContent);
 // 7. sort Exercise
 // Sort the people alphabetically by last name
 
