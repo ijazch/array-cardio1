@@ -99,9 +99,10 @@ console.log(oldest);
 
 // 6. create a list of Boulevards in Paris that contain 'de' anywhere in the name
 const category = document.querySelector(".pc-category");
-const link = Array.from(document.querySelectorforAll("a"));
+const links = Array.from(category.querySelectorforAll("a"));
 
-const de = link.map((link) => link.textContent);
+const de = links.map((link) => link.textContent);
+console.log(de);
 // 7. sort Exercise
 // Sort the people alphabetically by last name
 
